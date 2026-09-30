@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CrackIt — AI-Powered Cybersecurity & Research Operating System">
+  <title>CrackIt</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%233B82F6' rx='20' width='100' height='100'/><text x='50' y='68' font-size='50' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>CI</text></svg>">
+  <link rel="stylesheet" href="assets/css/professional.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Top Navigation Bar -->
+    <header class="topbar" role="banner">
+      <div class="topbar-left">
+        <div class="topbar-logo" id="topbar-logo" tabindex="0" aria-label="CrackIt Home">
+          <div class="topbar-logo-icon" style="width:28px;height:28px;font-size:13px">CI</div>
+          <span class="topbar-logo-text" style="font-size:14px">CrackIt</span>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <button class="topbar-btn" data-action="search" aria-label="Search" title="Search (Ctrl+Shift+F)">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="9" r="6"/><path d="M17 17l-4.35-4.35"/></svg>
+        </button>
+        <button class="topbar-btn" data-action="tasks" aria-label="Tasks" title="Tasks">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10l2 2 5-5"/><path d="M17 10v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h8"/></svg>
+        </button>
+        <button class="topbar-btn" data-action="notifications" aria-label="Notifications" id="topbar-notifications" title="Notifications">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 7a5 5 0 00-10 0c0 6-3 8-3 8h16s-3-2-3-8M11.73 18a2 2 0 01-3.46 0"/></svg>
+          <span class="topbar-btn-badge" id="notification-badge">0</span>
+        </button>
+
+        <button class="topbar-btn" data-action="settings" aria-label="Settings" title="Settings">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="2.5"/><path d="M10 1v2M10 17v2M3.72 3.72l1.42 1.42M14.86 14.86l1.42 1.42M1 10h2M17 10h2M3.72 16.28l1.42-1.42M14.86 5.14l1.42-1.42"/></svg>
+        </button>
+
+        <div class="window-controls">
+          <button class="window-control" data-window="minimize" aria-label="Minimize" title="Minimize">
+            <svg viewBox="0 0 12 12"><path d="M2 6h8" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+          <button class="window-control" data-window="maximize" aria-label="Maximize" title="Maximize">
+            <svg viewBox="0 0 12 12"><rect x="2.5" y="2.5" width="7" height="7" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </button>
+          <button class="window-control close" data-window="close" aria-label="Close" title="Close">
+            <svg viewBox="0 0 12 12"><path d="M3 3l6 6M9 3l-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Body -->
+    <div class="app-body">
+      <!-- Left Sidebar -->
+      <aside class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+        <div class="sidebar-header">
+          <span class="sidebar-header-title">Navigation</span>
+          <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle sidebar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+        </div>
+        <nav class="sidebar-nav scrollbar-thin" id="sidebar-nav"></nav>
+        <div class="sidebar-footer">
+          <div class="sidebar-footer-item" data-action="dashboard" style="cursor:pointer">
+            <span class="stb-indicator" style="width:6px;height:6px;border-radius:50%;background:var(--accent-green);flex-shrink:0"></span>
+            <span class="sidebar-footer-text" style="font-size:11px;color:var(--text-muted)">CrackIt v2.0.0</span>
+          </div>
+          <div class="sidebar-footer-item" style="gap:6px">
+            <span class="sidebar-footer-badge" id="sidebar-proj-count" style="font-size:10px;padding:1px 6px;border-radius:4px;background:var(--bg-hover)">0 projects</span>
+            <span class="sidebar-footer-badge" id="sidebar-sec-score" style="font-size:10px;padding:1px 6px;border-radius:4px;background:var(--bg-hover)">--</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="resize-handle" id="resize-left" aria-hidden="true"></div>
+
+      <!-- Workspace -->
+      <main class="workspace-container" role="main">
+        <div class="workspace-tabs scrollbar-thin" id="workspace-tabs" role="tablist"></div>
+        <div class="workspace-main">
+          <div class="workspace-content scrollbar-thin" id="workspace-content"></div>
+        </div>
+      </main>
+
+      <div class="resize-handle" id="resize-right" aria-hidden="true"></div>
+
+      <!-- Right Panel -->
+      <aside class="right-panel" id="right-panel" role="complementary" aria-label="Properties panel">
+        <div class="right-panel-header">
+          <span class="right-panel-title">Inspector</span>
+          <button class="topbar-btn" id="right-panel-toggle" aria-label="Toggle panel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="right-panel-tabs">
+          <button class="right-panel-tab active" data-panel="activity">Activity</button>
+          <button class="right-panel-tab" data-panel="properties">Properties</button>
+          <button class="right-panel-tab" data-panel="notes">Quick Note</button>
+        </div>
+        <div class="right-panel-content scrollbar-thin">
+          <div class="right-panel-section" data-panel="activity">
+            <div class="right-panel-section-title">Recent Activity</div>
+            <div id="right-panel-activity"></div>
+          </div>
+          <div class="right-panel-section hidden" data-panel="properties">
+            <div class="right-panel-section-title">Metadata</div>
+            <div id="right-panel-meta"></div>
+          </div>
+          <div class="right-panel-section hidden" data-panel="notes">
+            <div class="right-panel-section-title">Quick Note</div>
+            <textarea class="quick-note" id="quick-note-input" placeholder="Jot down a quick note..." style="min-height:120px;resize:vertical"></textarea>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px">
+              <span class="text-xs text-muted" id="quick-note-status">Auto-saved</span>
+              <button class="btn btn-ghost btn-sm" id="quick-note-clear" style="font-size:10px">Clear</button>
+            </div>
+            <div class="right-panel-section-title mt-4">AI Suggestions</div>
+            <p class="text-sm text-muted">AI-powered suggestions will appear here based on your current context.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Status Bar -->
+    <footer class="statusbar" role="contentinfo">
+      <div class="stb-left">
+        <div class="stb-section" data-action="dashboard" title="Go to Dashboard">
+          <span class="stb-indicator" style="width:8px;height:8px;background:var(--accent-green)"></span>
+          <span class="stb-item" style="font-size:11px">Ready</span>
+        </div>
+        <span class="stb-divider"></span>
+        <div class="stb-section" style="gap:12px">
+          <span class="stb-metric" title="CPU Usage"><span class="stb-label">CPU</span><span class="stb-bar"><span class="stb-fill" data-cpu-bar style="width:32%"></span></span><span data-cpu style="font-size:11px;font-variant-numeric:tabular-nums">32%</span></span>
+          <span class="stb-metric" title="RAM Usage"><span class="stb-label">RAM</span><span class="stb-bar"><span class="stb-fill" data-ram-bar style="width:58%"></span></span><span data-ram style="font-size:11px;font-variant-numeric:tabular-nums">58%</span></span>
+          <span class="stb-metric" title="Storage"><span class="stb-label">STO</span><span class="stb-bar"><span class="stb-fill" style="width:42%"></span></span><span style="font-size:11px">42%</span></span>
+          <span class="stb-metric" title="Network"><span class="stb-label">NET</span><span class="stb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0"/></svg></span><span style="font-size:11px">94%</span></span>
+        </div>
+      </div>
+      <div class="stb-spacer"></div>
+      <div class="stb-right">
+        <span class="stb-item" id="scratch-pad-toggle" style="cursor:pointer;display:flex;align-items:center;gap:4px" title="Scratch Pad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+        <span class="stb-divider"></span>
+        <span class="stb-item" id="stb-clock" style="font-size:11px" title="Current time"></span>
+        <span class="stb-divider"></span>
+        <span class="stb-version" data-action="help" title="CrackIt v2.0.0" style="font-size:10px">v2.0.0</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Context Menu -->
+  <div class="context-menu" id="context-menu" role="menu"></div>
+
+  <!-- Notification Panel -->
+  <div class="notification-panel" id="notification-panel" role="dialog" aria-label="Notifications">
+    <div class="notification-panel-header">
+      <div class="notification-panel-title-row">
+        <h2 class="notification-panel-title">Notifications</h2>
+        <span class="notification-panel-count" id="notif-count">0</span>
+      </div>
+      <div class="notification-panel-actions">
+        <button class="notif-action-btn" id="notification-mark-read" title="Mark all read"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></button>
+        <button class="notif-action-btn" id="notification-archive-all" title="Archive all"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><rect x="2" y="3" width="20" height="5" rx="1"/><path d="M4 8v11a2 2 0 002 2h12a2 2 0 002-2V8"/><path d="M10 12h4"/></svg></button>
+        <button class="notif-action-btn" id="notification-clear" title="Clear all"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+      </div>
+    </div>
+    <div class="notification-panel-tabs">
+      <button class="notif-tab active" data-category="all">All</button>
+      <button class="notif-tab" data-category="security">Security</button>
+      <button class="notif-tab" data-category="system">System</button>
+      <button class="notif-tab" data-category="tasks">Tasks</button>
+    </div>
+    <div class="notif-list" id="notification-list"></div>
+  </div>
+
+  <!-- Global Search Modal (Universal Spotlight) -->
+  <div class="modal-overlay search-overlay" id="modal-search" role="dialog" aria-label="Universal spotlight search">
+    <div class="search-dialog">
+      <div class="search-input-bar">
+        <span class="search-input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, clients, files, reports, commands..." autocomplete="off" spellcheck="false">
+        <span class="search-kbd-hint">Ctrl+K</span>
+        <button class="search-close-btn" id="search-close-btn" aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+      </div>
+      <div class="search-filters">
+        <button class="search-filter-chip active" data-filter="all">All</button>
+        <button class="search-filter-chip" data-filter="projects">Projects</button>
+        <button class="search-filter-chip" data-filter="clients">Clients</button>
+        <button class="search-filter-chip" data-filter="files">Files</button>
+        <button class="search-filter-chip" data-filter="reports">Reports</button>
+        <button class="search-filter-chip" data-filter="knowledge">Knowledge</button>
+        <button class="search-filter-chip" data-filter="commands">Commands</button>
+      </div>
+      <div class="search-results-wrap" id="search-results"></div>
+    </div>
+  </div>
+
+  <!-- Prompt Modal -->
+  <div class="modal-overlay" id="modal-prompt" role="dialog" aria-label="Prompt">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title"></h2>
+        <button class="modal-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close">Cancel</button>
+        <button class="btn btn-primary" data-action="save">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirm Modal -->
+  <div class="modal-overlay" id="modal-confirm" role="alertdialog" aria-label="Confirm">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Confirm Action</h2>
+        <button class="modal-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close">Cancel</button>
+        <button class="btn btn-danger" data-confirm>Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/notifications.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/notes.js"></script>
+  <script src="assets/js/files.js"></script>
+  <script src="assets/js/chat.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/knowledge.js"></script>
+  <script src="assets/js/clients.js"></script>
+  <script src="assets/js/utilities.js"></script>
+  <script src="assets/js/vault.js"></script>
+  <script src="assets/js/login.js"></script>
+  <script src="assets/js/mockdata.js"></script>
+  <script src="assets/js/modules.js"></script>
+  <script src="assets/js/professional.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

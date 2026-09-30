@@ -1,0 +1,12 @@
+[
+  {"id":"notif_0","title":"Scan Completed","text":"Vulnerability scan on target network finished successfully.","type":"success","read":false,"category":"security","createdAt":"2025-06-28T08:00:00.000Z"},
+  {"id":"notif_1","title":"Critical Finding","text":"New critical vulnerability detected in web application.","type":"error","read":false,"category":"security","createdAt":"2025-06-28T07:30:00.000Z"},
+  {"id":"notif_2","title":"Report Generated","text":"Q1 security assessment report is ready for review.","type":"info","read":false,"category":"system","createdAt":"2025-06-28T06:00:00.000Z"},
+  {"id":"notif_3","title":"Task Assigned","text":"New task assigned: Review firewall configuration.","type":"info","read":true,"category":"tasks","createdAt":"2025-06-27T18:00:00.000Z"},
+  {"id":"notif_4","title":"Backup Complete","text":"Daily backup completed successfully.","type":"success","read":true,"category":"system","createdAt":"2025-06-27T12:00:00.000Z"},
+  {"id":"notif_5","title":"Update Available","text":"CrackIt v2.1.0 is available for download.","type":"info","read":true,"category":"updates","createdAt":"2025-06-26T10:00:00.000Z"},
+  {"id":"notif_6","title":"Threat Detected","text":"Suspicious activity detected on endpoint WS-042.","type":"warning","read":false,"category":"security","createdAt":"2025-06-28T05:00:00.000Z"},
+  {"id":"notif_7","title":"Compliance Alert","text":"PCI-DSS compliance review due in 7 days.","type":"warning","read":true,"category":"system","createdAt":"2025-06-25T09:00:00.000Z"},
+  {"id":"notif_8","title":"AI Analysis Ready","text":"AI-powered log analysis results are available.","type":"success","read":false,"category":"system","createdAt":"2025-06-28T04:00:00.000Z"},
+  {"id":"notif_9","title":"Export Complete","text":"Evidence package exported to secure storage.","type":"success","read":true,"category":"tasks","createdAt":"2025-06-24T16:00:00.000Z"}
+]

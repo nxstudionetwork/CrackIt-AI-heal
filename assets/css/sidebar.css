@@ -1,0 +1,250 @@
+/* CrackIt Sidebar — Phase 6 Tree Submenus */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: var(--sidebar-width);
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  flex-shrink: 0;
+  transition: width 0.25s ease;
+  overflow: hidden;
+}
+
+.sidebar.collapsed { width: var(--sidebar-collapsed); }
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  min-height: 40px;
+}
+
+.sidebar-header-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar.collapsed .sidebar-header-title { opacity: 0; width: 0; }
+
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.sidebar-toggle:hover { background: var(--bg-hover); color: var(--text-primary); }
+
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 4px 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main solo item (Dashboard) */
+.sbar-main { margin-bottom: 2px; }
+
+.sbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 10px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  position: relative;
+}
+
+.sbar-item:hover { background: var(--bg-hover); color: var(--text-primary); }
+.sbar-item.active { background: var(--bg-active); color: var(--text-primary); }
+.sbar-item.active::before {
+  content: ''; position: absolute; left: 0; top: 50%;
+  transform: translateY(-50%); width: 3px; height: 16px;
+  background: var(--accent-blue); border-radius: 0 2px 2px 0;
+}
+
+.sbar-item .sbar-indicator { display: none; }
+.sbar-item .sbar-icon { display:flex;align-items:center;justify-content:center;width:18px;height:18px;flex-shrink:0; }
+.sbar-item .sbar-icon svg { width:18px;height:18px; }
+.sbar-item .sbar-label { flex:1;overflow:hidden;text-overflow:ellipsis; }
+
+/* Section toggle (parent items with >) */
+.sbar-section { display:flex;flex-direction:column; }
+
+.sbar-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 10px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+  position: relative;
+}
+
+.sbar-toggle:hover { background: var(--bg-hover); color: var(--text-primary); }
+
+.sbar-toggle .sbar-arrow {
+  display:flex;align-items:center;justify-content:center;
+  width:14px;height:14px;flex-shrink:0;
+  transition: transform 0.2s ease;
+  font-size:10px;color:var(--text-muted);
+}
+
+.sbar-toggle .sbar-arrow svg { width:10px;height:10px; }
+
+.sbar-toggle .sbar-icon {
+  display:flex;align-items:center;justify-content:center;
+  width:18px;height:18px;flex-shrink:0;
+}
+
+.sbar-toggle .sbar-icon svg { width:18px;height:18px; }
+
+.sbar-toggle .sbar-label { flex:1;overflow:hidden;text-overflow:ellipsis; }
+
+.sbar-toggle .sbar-arrow-hint {
+  font-size:11px;color:var(--text-muted);opacity:0.5;
+  font-weight:600;margin-left:auto;
+}
+
+/* Children (sub-items) */
+.sbar-children {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 2px 0 2px 20px;
+  border-left: 1px solid var(--border);
+  margin-left: 18px;
+}
+
+.sbar-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 5px 8px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.sbar-child:hover { background: var(--bg-hover); color: var(--text-primary); }
+.sbar-child.active { color: var(--text-primary); font-weight: 500; }
+
+.sbar-child .sbar-child-icon {
+  display:flex;align-items:center;justify-content:center;
+  width:14px;height:14px;flex-shrink:0;opacity:0.6;
+}
+
+.sbar-child .sbar-child-icon svg { width:14px;height:14px; }
+
+.sbar-child .sbar-child-label { flex:1;overflow:hidden;text-overflow:ellipsis; }
+
+.sbar-badge {
+  padding: 1px 5px;
+  background: var(--accent-blue);
+  border-radius: 10px;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.sidebar-footer-item { display:flex; align-items:center; gap:8px; padding:4px 12px; transition:background var(--transition-fast); }
+.sidebar-footer-item:hover { background:var(--bg-hover); }
+.sidebar.collapsed .sidebar-footer { display:none; }
+
+/* Collapsed state */
+.sidebar.collapsed .sbar-item,
+.sidebar.collapsed .sbar-toggle {
+  justify-content: center;
+  padding: 7px 4px;
+}
+
+.sidebar.collapsed .sbar-item .sbar-indicator,
+.sidebar.collapsed .sbar-item .sbar-label,
+.sidebar.collapsed .sbar-toggle .sbar-arrow,
+.sidebar.collapsed .sbar-toggle .sbar-label,
+.sidebar.collapsed .sbar-toggle .sbar-arrow-hint,
+.sidebar.collapsed .sbar-children,
+.sidebar.collapsed .sbar-child,
+.sidebar.collapsed .sidebar-header-title { display: none; }
+
+.sidebar.collapsed .sbar-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 7px;
+  height: 7px;
+  padding: 0;
+  font-size: 0;
+  border-radius: 50%;
+}
+
+/* Tooltip for collapsed sidebar */
+.sidebar.collapsed .sbar-item[data-tooltip]::after,
+.sidebar.collapsed .sbar-toggle[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px 8px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 11px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  z-index: 1000;
+}
+
+.sidebar.collapsed .sbar-item:hover[data-tooltip]::after,
+.sidebar.collapsed .sbar-toggle:hover[data-tooltip]::after {
+  opacity: 1;
+}

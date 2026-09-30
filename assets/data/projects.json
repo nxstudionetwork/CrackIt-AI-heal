@@ -1,0 +1,952 @@
+﻿[
+    {
+        "id":  "proj_0",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#3B82F6",
+        "createdAt":  "2026-04-12T02:12:12.3810125+05:30",
+        "description":  "Comprehensive security assessment for operation nightfall.",
+        "pinned":  true,
+        "progress":  36,
+        "name":  "Operation Nightfall",
+        "updatedAt":  "2026-06-25T08:17:15.1793152+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_1",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#8B5CF6",
+        "createdAt":  "2026-05-04T02:23:35.6895042+05:30",
+        "description":  "Comprehensive security assessment for project sentinel.",
+        "pinned":  true,
+        "progress":  62,
+        "name":  "Project Sentinel",
+        "updatedAt":  "2026-06-25T10:29:01.4135042+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_2",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#06B6D4",
+        "createdAt":  "2026-05-27T02:54:44.8605042+05:30",
+        "description":  "Comprehensive security assessment for red team alpha.",
+        "pinned":  true,
+        "progress":  77,
+        "name":  "Red Team Alpha",
+        "updatedAt":  "2026-06-28T04:49:48.3615042+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_3",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#10B981",
+        "createdAt":  "2026-05-19T22:32:33.4285465+05:30",
+        "description":  "Comprehensive security assessment for blue shield initiative.",
+        "pinned":  true,
+        "progress":  47,
+        "name":  "Blue Shield Initiative",
+        "updatedAt":  "2026-06-28T04:21:24.4645465+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_4",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F59E0B",
+        "createdAt":  "2026-05-26T07:21:16.0875465+05:30",
+        "description":  "Comprehensive security assessment for cve research 2025.",
+        "pinned":  true,
+        "progress":  58,
+        "name":  "CVE Research 2025",
+        "updatedAt":  "2026-06-21T15:56:46.2545465+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_5",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#EF4444",
+        "createdAt":  "2026-04-27T13:08:17.0615465+05:30",
+        "description":  "Comprehensive security assessment for infrastructure audit.",
+        "pinned":  true,
+        "progress":  83,
+        "name":  "Infrastructure Audit",
+        "updatedAt":  "2026-06-24T07:37:47.8215465+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_6",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F97316",
+        "createdAt":  "2026-05-28T01:50:09.6715465+05:30",
+        "description":  "Comprehensive security assessment for cloud security review.",
+        "pinned":  true,
+        "progress":  84,
+        "name":  "Cloud Security Review",
+        "updatedAt":  "2026-06-23T12:34:32.1315465+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_7",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#3B82F6",
+        "createdAt":  "2026-06-20T22:44:55.5345465+05:30",
+        "description":  "Comprehensive security assessment for pen test q2.",
+        "pinned":  true,
+        "progress":  15,
+        "name":  "Pen Test Q2",
+        "updatedAt":  "2026-06-27T03:23:41.1425465+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_8",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#8B5CF6",
+        "createdAt":  "2026-05-04T18:01:55.2255465+05:30",
+        "description":  "Comprehensive security assessment for threat intel pipeline.",
+        "pinned":  false,
+        "progress":  32,
+        "name":  "Threat Intel Pipeline",
+        "updatedAt":  "2026-06-22T16:42:00.7685465+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_9",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#06B6D4",
+        "createdAt":  "2026-05-05T13:54:30.3555465+05:30",
+        "description":  "Comprehensive security assessment for zero trust migration.",
+        "pinned":  false,
+        "progress":  67,
+        "name":  "Zero Trust Migration",
+        "updatedAt":  "2026-06-21T17:45:09.9495925+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_10",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#10B981",
+        "createdAt":  "2026-04-01T09:36:51.8265925+05:30",
+        "description":  "Comprehensive security assessment for soc enhancement.",
+        "pinned":  false,
+        "progress":  44,
+        "name":  "SOC Enhancement",
+        "updatedAt":  "2026-06-22T19:28:52.1716069+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_11",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F59E0B",
+        "createdAt":  "2026-03-30T22:07:20.0511757+05:30",
+        "description":  "Comprehensive security assessment for incident response plan.",
+        "pinned":  false,
+        "progress":  71,
+        "name":  "Incident Response Plan",
+        "updatedAt":  "2026-06-28T09:49:00.3311757+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_12",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#EF4444",
+        "createdAt":  "2026-06-09T07:57:54.3402199+05:30",
+        "description":  "Comprehensive security assessment for network segmentation.",
+        "pinned":  false,
+        "progress":  52,
+        "name":  "Network Segmentation",
+        "updatedAt":  "2026-06-27T21:02:42.9622199+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_13",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F97316",
+        "createdAt":  "2026-06-11T15:08:13.5827751+05:30",
+        "description":  "Comprehensive security assessment for api security assessment.",
+        "pinned":  false,
+        "progress":  47,
+        "name":  "API Security Assessment",
+        "updatedAt":  "2026-06-25T06:47:52.9837751+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_14",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#3B82F6",
+        "createdAt":  "2026-04-13T14:04:44.4278049+05:30",
+        "description":  "Comprehensive security assessment for mobile app pentest.",
+        "pinned":  false,
+        "progress":  62,
+        "name":  "Mobile App Pentest",
+        "updatedAt":  "2026-06-26T09:39:50.4428049+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_15",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#8B5CF6",
+        "createdAt":  "2026-04-26T17:53:56.7858049+05:30",
+        "description":  "Comprehensive security assessment for iot security scan.",
+        "pinned":  false,
+        "progress":  51,
+        "name":  "IoT Security Scan",
+        "updatedAt":  "2026-06-26T06:14:47.5818049+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "active",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_16",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#06B6D4",
+        "createdAt":  "2026-06-19T18:28:59.4553585+05:30",
+        "description":  "Comprehensive security assessment for compliance framework.",
+        "pinned":  false,
+        "progress":  40,
+        "name":  "Compliance Framework",
+        "updatedAt":  "2026-06-22T03:33:55.3053585+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_17",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#10B981",
+        "createdAt":  "2026-06-18T08:51:42.2823585+05:30",
+        "description":  "Comprehensive security assessment for data loss prevention.",
+        "pinned":  false,
+        "progress":  71,
+        "name":  "Data Loss Prevention",
+        "updatedAt":  "2026-06-23T09:45:17.7983585+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_18",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F59E0B",
+        "createdAt":  "2026-04-15T08:33:43.6323585+05:30",
+        "description":  "Comprehensive security assessment for identity management.",
+        "pinned":  false,
+        "progress":  24,
+        "name":  "Identity Management",
+        "updatedAt":  "2026-06-22T16:08:56.4773585+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_19",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#EF4444",
+        "createdAt":  "2026-06-14T11:01:56.6167027+05:30",
+        "description":  "Comprehensive security assessment for endpoint hardening.",
+        "pinned":  false,
+        "progress":  52,
+        "name":  "Endpoint Hardening",
+        "updatedAt":  "2026-06-27T05:34:09.0567027+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_20",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F97316",
+        "createdAt":  "2026-06-16T15:05:55.8347027+05:30",
+        "description":  "Comprehensive security assessment for supply chain audit.",
+        "pinned":  false,
+        "progress":  29,
+        "name":  "Supply Chain Audit",
+        "updatedAt":  "2026-06-22T01:54:13.8648257+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_21",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#3B82F6",
+        "createdAt":  "2026-05-28T09:10:59.3888257+05:30",
+        "description":  "Comprehensive security assessment for ransomware preparedness.",
+        "pinned":  false,
+        "progress":  13,
+        "name":  "Ransomware Preparedness",
+        "updatedAt":  "2026-06-27T07:28:30.6158257+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_22",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#8B5CF6",
+        "createdAt":  "2026-06-01T09:55:02.2813404+05:30",
+        "description":  "Comprehensive security assessment for dark web monitoring.",
+        "pinned":  false,
+        "progress":  24,
+        "name":  "Dark Web Monitoring",
+        "updatedAt":  "2026-06-28T12:21:19.2453404+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_23",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#06B6D4",
+        "createdAt":  "2026-04-29T00:12:19.5383404+05:30",
+        "description":  "Comprehensive security assessment for phishing simulation.",
+        "pinned":  false,
+        "progress":  34,
+        "name":  "Phishing Simulation",
+        "updatedAt":  "2026-06-27T09:38:38.7003404+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_24",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#10B981",
+        "createdAt":  "2026-05-04T23:03:17.3723404+05:30",
+        "description":  "Comprehensive security assessment for vulnerability remediation.",
+        "pinned":  false,
+        "progress":  89,
+        "name":  "Vulnerability Remediation",
+        "updatedAt":  "2026-06-28T12:48:41.0533713+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_25",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F59E0B",
+        "createdAt":  "2026-06-12T08:55:36.1843713+05:30",
+        "description":  "Comprehensive security assessment for security awareness.",
+        "pinned":  false,
+        "progress":  51,
+        "name":  "Security Awareness",
+        "updatedAt":  "2026-06-24T04:09:07.8173713+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_26",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#EF4444",
+        "createdAt":  "2026-04-01T21:44:21.8253713+05:30",
+        "description":  "Comprehensive security assessment for devsecops integration.",
+        "pinned":  false,
+        "progress":  54,
+        "name":  "DevSecOps Integration",
+        "updatedAt":  "2026-06-24T04:19:49.0923713+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_27",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F97316",
+        "createdAt":  "2026-04-11T02:38:34.0949054+05:30",
+        "description":  "Comprehensive security assessment for container security.",
+        "pinned":  false,
+        "progress":  96,
+        "name":  "Container Security",
+        "updatedAt":  "2026-06-21T21:11:35.9329054+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_28",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#3B82F6",
+        "createdAt":  "2026-05-08T21:36:59.4105143+05:30",
+        "description":  "Comprehensive security assessment for kubernetes hardening.",
+        "pinned":  false,
+        "progress":  22,
+        "name":  "Kubernetes Hardening",
+        "updatedAt":  "2026-06-24T11:27:31.2925175+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_29",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#8B5CF6",
+        "createdAt":  "2026-05-28T19:24:31.6015175+05:30",
+        "description":  "Comprehensive security assessment for aws security review.",
+        "pinned":  false,
+        "progress":  12,
+        "name":  "AWS Security Review",
+        "updatedAt":  "2026-06-27T22:05:14.0408052+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_30",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#06B6D4",
+        "createdAt":  "2026-05-29T10:10:31.8838444+05:30",
+        "description":  "Comprehensive security assessment for azure posture check.",
+        "pinned":  false,
+        "progress":  32,
+        "name":  "Azure Posture Check",
+        "updatedAt":  "2026-06-27T06:14:53.2773838+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_31",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#10B981",
+        "createdAt":  "2026-04-13T11:57:30.8479207+05:30",
+        "description":  "Comprehensive security assessment for gcp audit trail.",
+        "pinned":  false,
+        "progress":  48,
+        "name":  "GCP Audit Trail",
+        "updatedAt":  "2026-06-26T09:17:42.5039207+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_32",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F59E0B",
+        "createdAt":  "2026-06-17T11:12:24.7009308+05:30",
+        "description":  "Comprehensive security assessment for siem optimization.",
+        "pinned":  false,
+        "progress":  75,
+        "name":  "SIEM Optimization",
+        "updatedAt":  "2026-06-21T20:12:28.9719308+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_33",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#EF4444",
+        "createdAt":  "2026-04-05T00:35:59.5949402+05:30",
+        "description":  "Comprehensive security assessment for log analysis pipeline.",
+        "pinned":  false,
+        "progress":  20,
+        "name":  "Log Analysis Pipeline",
+        "updatedAt":  "2026-06-24T08:02:42.6649402+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_34",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F97316",
+        "createdAt":  "2026-05-18T03:35:35.5599402+05:30",
+        "description":  "Comprehensive security assessment for forensics toolkit.",
+        "pinned":  false,
+        "progress":  18,
+        "name":  "Forensics Toolkit",
+        "updatedAt":  "2026-06-23T14:57:10.7189399+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_35",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#3B82F6",
+        "createdAt":  "2026-05-27T20:55:15.0939399+05:30",
+        "description":  "Comprehensive security assessment for malware analysis lab.",
+        "pinned":  false,
+        "progress":  97,
+        "name":  "Malware Analysis Lab",
+        "updatedAt":  "2026-06-23T11:09:36.3559394+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "active",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_36",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#8B5CF6",
+        "createdAt":  "2026-04-17T09:21:29.7089394+05:30",
+        "description":  "Comprehensive security assessment for reverse engineering.",
+        "pinned":  false,
+        "progress":  32,
+        "name":  "Reverse Engineering",
+        "updatedAt":  "2026-06-21T23:41:48.8609394+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_37",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#06B6D4",
+        "createdAt":  "2026-06-04T20:24:20.6089411+05:30",
+        "description":  "Comprehensive security assessment for exploit development.",
+        "pinned":  false,
+        "progress":  26,
+        "name":  "Exploit Development",
+        "updatedAt":  "2026-06-27T20:08:53.2739411+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_38",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#10B981",
+        "createdAt":  "2026-05-15T16:28:12.9139437+05:30",
+        "description":  "Comprehensive security assessment for bug bounty program.",
+        "pinned":  false,
+        "progress":  42,
+        "name":  "Bug Bounty Program",
+        "updatedAt":  "2026-06-25T16:21:24.2559437+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_39",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F59E0B",
+        "createdAt":  "2026-05-06T07:01:36.5679437+05:30",
+        "description":  "Comprehensive security assessment for red team infrastructure.",
+        "pinned":  false,
+        "progress":  64,
+        "name":  "Red Team Infrastructure",
+        "updatedAt":  "2026-06-23T09:00:11.6314583+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_40",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#EF4444",
+        "createdAt":  "2026-06-14T01:50:22.0749852+05:30",
+        "description":  "Comprehensive security assessment for c2 framework setup.",
+        "pinned":  false,
+        "progress":  64,
+        "name":  "C2 Framework Setup",
+        "updatedAt":  "2026-06-26T10:47:45.2289852+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_41",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F97316",
+        "createdAt":  "2026-06-03T06:16:34.7439852+05:30",
+        "description":  "Comprehensive security assessment for osint collection.",
+        "pinned":  false,
+        "progress":  13,
+        "name":  "OSINT Collection",
+        "updatedAt":  "2026-06-22T09:00:53.4559852+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_42",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#3B82F6",
+        "createdAt":  "2026-04-28T02:53:29.6105200+05:30",
+        "description":  "Comprehensive security assessment for social engineering test.",
+        "pinned":  false,
+        "progress":  76,
+        "name":  "Social Engineering Test",
+        "updatedAt":  "2026-06-23T22:03:48.7020521+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_43",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#8B5CF6",
+        "createdAt":  "2026-06-08T17:34:32.3630521+05:30",
+        "description":  "Comprehensive security assessment for physical security audit.",
+        "pinned":  false,
+        "progress":  64,
+        "name":  "Physical Security Audit",
+        "updatedAt":  "2026-06-22T11:48:55.1050662+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "planning",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_44",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#06B6D4",
+        "createdAt":  "2026-06-16T02:28:15.6905764+05:30",
+        "description":  "Comprehensive security assessment for wireless assessment.",
+        "pinned":  false,
+        "progress":  83,
+        "name":  "Wireless Assessment",
+        "updatedAt":  "2026-06-28T06:36:40.7865764+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "active",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_45",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#10B981",
+        "createdAt":  "2026-05-29T18:24:25.0191671+05:30",
+        "description":  "Comprehensive security assessment for web app pentest.",
+        "pinned":  false,
+        "progress":  88,
+        "name":  "Web App Pentest",
+        "updatedAt":  "2026-06-26T03:39:49.2631671+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "review",
+        "priority":  "high"
+    },
+    {
+        "id":  "proj_46",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F59E0B",
+        "createdAt":  "2026-04-27T01:28:01.1170371+05:30",
+        "description":  "Comprehensive security assessment for database security.",
+        "pinned":  false,
+        "progress":  87,
+        "name":  "Database Security",
+        "updatedAt":  "2026-06-26T04:47:01.8840371+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "low"
+    },
+    {
+        "id":  "proj_47",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#EF4444",
+        "createdAt":  "2026-04-02T05:16:54.3125834+05:30",
+        "description":  "Comprehensive security assessment for cryptography review.",
+        "pinned":  false,
+        "progress":  38,
+        "name":  "Cryptography Review",
+        "updatedAt":  "2026-06-27T01:59:50.2315834+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "on-hold",
+        "priority":  "medium"
+    },
+    {
+        "id":  "proj_48",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#F97316",
+        "createdAt":  "2026-03-31T12:00:50.3676267+05:30",
+        "description":  "Comprehensive security assessment for pki infrastructure.",
+        "pinned":  false,
+        "progress":  64,
+        "name":  "PKI Infrastructure",
+        "updatedAt":  "2026-06-24T10:20:04.1011477+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "critical"
+    },
+    {
+        "id":  "proj_49",
+        "tags":  [
+                     "security",
+                     "research"
+                 ],
+        "color":  "#3B82F6",
+        "createdAt":  "2026-04-27T10:14:04.8511854+05:30",
+        "description":  "Comprehensive security assessment for certificate management.",
+        "pinned":  false,
+        "progress":  65,
+        "name":  "Certificate Management",
+        "updatedAt":  "2026-06-22T13:15:49.8461854+05:30",
+        "members":  [
+                        "Admin"
+                    ],
+        "status":  "completed",
+        "priority":  "critical"
+    }
+]

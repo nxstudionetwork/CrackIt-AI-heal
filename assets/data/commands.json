@@ -1,0 +1,17 @@
+[
+  {"id":"nav_dashboard","label":"Go to Dashboard","icon":"dashboard","action":"navigate","target":"dashboard","shortcut":"Ctrl+1"},
+  {"id":"nav_projects","label":"Go to Projects","icon":"projects","action":"navigate","target":"projects","shortcut":"Ctrl+2"},
+  {"id":"nav_chat","label":"Open AI Chat","icon":"chat","action":"navigate","target":"chat","shortcut":"Ctrl+3"},
+  {"id":"nav_notes","label":"Open Notes","icon":"notes","action":"navigate","target":"notes","shortcut":"Ctrl+4"},
+  {"id":"nav_files","label":"Open Files","icon":"files","action":"navigate","target":"files","shortcut":"Ctrl+5"},
+  {"id":"nav_terminal","label":"Open Terminal","icon":"terminal","action":"navigate","target":"terminal","shortcut":"Ctrl+`"},
+  {"id":"nav_settings","label":"Open Settings","icon":"settings","action":"navigate","target":"settings","shortcut":"Ctrl+,"},
+  {"id":"new_project","label":"New Project","icon":"plus","action":"modal","target":"new-project"},
+  {"id":"new_note","label":"New Note","icon":"plus","action":"modal","target":"new-note"},
+  {"id":"new_chat","label":"New Chat","icon":"chat","action":"navigate","target":"chat"},
+  {"id":"toggle_sidebar","label":"Toggle Sidebar","icon":"menu","action":"toggle","target":"sidebar","shortcut":"Ctrl+B"},
+  {"id":"toggle_panel","label":"Toggle Right Panel","icon":"chevronLeft","action":"toggle","target":"rightPanel","shortcut":"Ctrl+J"},
+  {"id":"global_search","label":"Global Search","icon":"search","action":"modal","target":"search","shortcut":"Ctrl+Shift+F"},
+  {"id":"export_data","label":"Export Data","icon":"download","action":"toast","target":"Export started..."},
+  {"id":"clear_cache","label":"Clear Cache","icon":"trash","action":"toast","target":"Cache cleared"}
+]
